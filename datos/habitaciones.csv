@@ -1,0 +1,31 @@
+﻿id,tipo,costo,camas,ubicacion,balcon,cocina
+1,estandar,50000,2-2n,piso2,false,false
+2,estandar,50000,2,piso2,false,false
+3,estandar,50000,2,piso1,false,false
+4,estandar,50000,2,piso1,false,false
+5,estandar,50000,2-1n,piso1,true,false
+6,estandar,50000,2-2-1n,piso2,true,true
+7,estandar,50000,2-2,piso1,false,false
+8,estandar,50000,2-1n,piso1,false,true
+9,estandar,50000,2-2,piso2,false,true
+10,estandar,50000,2-2,piso3,false,false
+11,estandar,50000,1-1,piso2,true,false
+12,estandar,50000,2-1,piso2,false,false
+13,suite,70000,2-1-1,piso4,false,true
+14,suite,70000,2-1-1n,piso4,true,false
+15,suite,70000,2,piso4,false,false
+16,suite,70000,2-1-2n,piso4,true,false
+17,suite,70000,2,piso4,false,true
+18,suite,70000,2,piso4,false,false
+19,suite,70000,1,piso5,true,false
+20,suite,70000,2-2,piso5,false,true
+21,suite,70000,2-1,piso5,true,false
+22,suite,70000,2-2n,piso5,false,false
+23,suite,70000,2,piso2,false,true
+24,suite doble,100000,2-1-1n,piso5,false,true
+25,suite doble,100000,2-2-1,piso6,true,true
+26,suite doble,100000,2-2-2n,piso6,false,true
+27,suite doble,100000,2-2-1-2n,piso5,true,false
+28,suite doble,100000,2-2-1-2n,piso6,false,true
+29,suite doble,100000,2-1,piso6,true,true
+30,suite doble,100000,2-2-3,piso6,true,true

@@ -1,0 +1,25 @@
+﻿id,nombre,costo,habitacion
+1,pescado,20000,FALSE
+2,Carne Asada,15000,FALSE
+3,Pollo al curry,10000,FALSE
+4,Coca-cola,2500,TRUE
+5,Pepsi,2500,TRUE
+6,Agua,1600,TRUE
+7,Jugo de Naranja,2000,TRUE
+8,M&M's,4000,TRUE
+9,French Fries,6000,TRUE
+10,Hamburguesa,25000,TRUE
+11,Malteada,7000,FALSE
+12,Gomitas,2500,TRUE
+13,Red Bull,7000,TRUE
+14,Huevos revueltos,1500,TRUE
+15,Waffles con frutas y miel,20000,FALSE
+16,Sopa de pollo,8000,FALSE
+17,Tacos de carne,8000,TRUE
+18,Sushi variado,30000,FALSE
+19,Pizza,20000,TRUE
+20,Pasta,25000,FALSE
+21,Tinto,600,TRUE
+22,Tiramisu,7500,TRUE
+23,Cheesecake,8000,TRUE
+24,Churros,5000,TRUE

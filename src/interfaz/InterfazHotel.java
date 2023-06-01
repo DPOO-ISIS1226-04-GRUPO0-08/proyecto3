@@ -11,6 +11,7 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import interfaz.interfazUsuario.*;
 
 public class InterfazHotel extends JFrame {
 	
@@ -35,8 +36,10 @@ public class InterfazHotel extends JFrame {
 	private InterfazAdministrador interfazAdmin;
     private interfazEmpleado interfaz_Empleado;
     private interfazRecepcionista interfaz_Recepcionista;
+    private InterfazUsuario interfazUsuario;
     
     private JScrollPane scroll;
+    
     
 	public InterfazHotel() throws IOException {
 		
@@ -58,6 +61,7 @@ public class InterfazHotel extends JFrame {
 		this.interfazAdmin = new InterfazAdministrador();
 		this.interfaz_Empleado = new interfazEmpleado();
 		this.interfaz_Recepcionista = new interfazRecepcionista();
+		this.interfazUsuario = new InterfazUsuario();
 		
 		/**
 		scroll = new JScrollPane(panelEleccionPerfil,JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
@@ -79,6 +83,7 @@ public class InterfazHotel extends JFrame {
 		this.interfaz_Empleado.setVisible(false);
 		this.interfaz_Recepcionista.setVisible(false);
 		this.interfazAdmin.setVisible(false);
+		this.interfazUsuario.setVisible(false);
 		
 		this.add(interfaz_Empleado, BorderLayout.CENTER);
 		this.interfaz_Empleado.setVisible(true);
@@ -90,6 +95,7 @@ public class InterfazHotel extends JFrame {
 		this.interfaz_Empleado.setVisible(false);
 		this.interfaz_Recepcionista.setVisible(false);
 		this.interfazAdmin.setVisible(false);
+		this.interfazUsuario.setVisible(false);
 		
 		this.add(interfaz_Recepcionista, BorderLayout.CENTER);
 		this.interfaz_Recepcionista.setVisible(true);	
@@ -101,10 +107,24 @@ public class InterfazHotel extends JFrame {
 		this.interfaz_Empleado.setVisible(false);
 		this.interfaz_Recepcionista.setVisible(false);
 		this.interfazAdmin.setVisible(false);
+		this.interfazUsuario.setVisible(false);
 		
 		this.add(interfazAdmin, BorderLayout.CENTER);
 		this.interfazAdmin.setVisible(true);		
+	}	
+	
+	
+	public void abrirInterfazUsuario() {	
+		this.panelEleccionPerfil.setVisible(false);
+		this.interfaz_Empleado.setVisible(false);
+		this.interfaz_Recepcionista.setVisible(false);
+		this.interfazAdmin.setVisible(false);
+		this.interfazUsuario.setVisible(false);
+		
+		this.add(interfazUsuario, BorderLayout.CENTER);
+		this.interfazUsuario.setVisible(true);		
 	}
+	
 		
 	
 	

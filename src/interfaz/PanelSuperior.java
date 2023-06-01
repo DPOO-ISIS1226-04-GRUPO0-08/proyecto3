@@ -23,7 +23,7 @@ public class PanelSuperior extends JPanel implements ActionListener{
 	
 	private InterfazHotel principal;
 	private PanelCabecera panelImagen;
-	private String[] listaPerfilesTxt = {"Empleado", "Recepcionista", "Administrador"};
+	private String[] listaPerfilesTxt = {"Empleado", "Recepcionista", "Administrador", "Usuario"};
 	private JComboBox listaPerfiles;
 	
 	
@@ -87,6 +87,10 @@ public class PanelSuperior extends JPanel implements ActionListener{
 			} else if (cargo.equals("Administrador")){
 				System.out.println("Abriendo perfil de Administrador");
 				principal.abrirInterfazAdministrador();
+			
+			} else if (cargo.equals("Usuario")){
+				System.out.println("Abriendo perfil de Usuario");
+				principal.abrirInterfazUsuario();
 			}
 			
 		} 

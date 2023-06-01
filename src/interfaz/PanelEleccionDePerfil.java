@@ -27,6 +27,7 @@ public class PanelEleccionDePerfil extends JPanel implements ActionListener{
 	private JButton btnEmpleado;
 	private JButton btnRecepcionista;
 	private JButton btnAdministrados;
+	private JButton btnUsuario;
 	private JLabel titulo;
 	
 	
@@ -36,7 +37,7 @@ public class PanelEleccionDePerfil extends JPanel implements ActionListener{
 		
 		this.setLayout(new BorderLayout());
 		this.add(Box.createVerticalStrut(25), BorderLayout.NORTH);
-		this.add(Box.createVerticalStrut(25), BorderLayout.SOUTH);
+		this.add(Box.createVerticalStrut(40), BorderLayout.SOUTH);
 		this.add(Box.createHorizontalStrut(50), BorderLayout.EAST);
 		this.add(Box.createHorizontalStrut(50), BorderLayout.WEST);
 		
@@ -45,7 +46,7 @@ public class PanelEleccionDePerfil extends JPanel implements ActionListener{
 		
 		
 		JPanel panelBotones = new JPanel();
-		panelBotones.setLayout(new GridLayout(5,1,30,30));
+		panelBotones.setLayout(new GridLayout(5,1,40,20));
 		panelBotones.setOpaque(false);
 		//this.setBounds(100, 100, 200, 300);
 		
@@ -67,6 +68,11 @@ public class PanelEleccionDePerfil extends JPanel implements ActionListener{
 		btnAdministrados.setBounds(0,0,100,100);
 		panelBotones.add(btnAdministrados);
 		btnAdministrados.addActionListener(this);
+		
+		btnUsuario = new JButton("Usuario");
+		btnUsuario.setBounds(0,0,100,100);
+		panelBotones.add(btnUsuario);
+		btnUsuario.addActionListener(this);
 		//panelBotones.add(Box.createHorizontalStrut(25));
 		
 		this.add(panelBotones, BorderLayout.CENTER);
@@ -91,6 +97,10 @@ public class PanelEleccionDePerfil extends JPanel implements ActionListener{
 		} else if (e.getSource() == btnAdministrados) {
 			System.out.println("Abriendo perfil de Administrador");
 			interfaz.abrirInterfazAdministrador();
+		
+		} else if (e.getSource() == btnUsuario) {
+			System.out.println("Abriendo perfil de Administrador");
+			interfaz.abrirInterfazUsuario();
 		}
 		
 	}

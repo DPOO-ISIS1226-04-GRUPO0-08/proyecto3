@@ -61,7 +61,7 @@ public class InterfazHotel extends JFrame {
 		this.interfazAdmin = new InterfazAdministrador();
 		this.interfaz_Empleado = new interfazEmpleado();
 		this.interfaz_Recepcionista = new interfazRecepcionista();
-		this.interfazUsuario = new InterfazUsuario();
+		this.interfazUsuario = new InterfazUsuario(this);
 		
 		/**
 		scroll = new JScrollPane(panelEleccionPerfil,JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);

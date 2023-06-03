@@ -36,10 +36,10 @@ public class PanelEleccionDePerfil extends JPanel implements ActionListener{
 		this.interfaz = interfazp;
 		
 		this.setLayout(new BorderLayout());
-		this.add(Box.createVerticalStrut(25), BorderLayout.NORTH);
-		this.add(Box.createVerticalStrut(40), BorderLayout.SOUTH);
-		this.add(Box.createHorizontalStrut(50), BorderLayout.EAST);
-		this.add(Box.createHorizontalStrut(50), BorderLayout.WEST);
+		this.add(Box.createVerticalStrut((int) (interfaz.getHeight()*0.1)), BorderLayout.NORTH);
+		this.add(Box.createVerticalStrut((int) (interfaz.getHeight()*0.1)), BorderLayout.SOUTH);
+		this.add(Box.createHorizontalStrut((int) (interfaz.getWidth()*0.1)), BorderLayout.EAST);
+		this.add(Box.createHorizontalStrut((int) (interfaz.getWidth()*0.1)), BorderLayout.WEST);;
 		
 		this.setBackground(Color.LIGHT_GRAY);
 		

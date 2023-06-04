@@ -14,5 +14,17 @@ public class UsuarioSesion {
 		int edadint = Integer.parseInt(edads);
 		this.edad = edadint;
 	}
-
+	
+	
+	public String getUsuario() {
+		return this.usuario;
+	}
+	
+	public String getContrasenia() {
+		return this.contrasenia;
+	}
+	
+	public int getEdad() {
+		return this.edad;
+	}
 }

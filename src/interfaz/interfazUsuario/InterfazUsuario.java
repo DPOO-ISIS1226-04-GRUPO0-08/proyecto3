@@ -38,8 +38,13 @@ public class InterfazUsuario extends JPanel{
 
 	
 	void iniciarSesion(String nombreUsuario, String contrasenia) {
-	
-		
+
 	}
+	
+	
+	public InterfazHotel getInterfazPrincipal() {
+		return interfaz;
+	}
+	
 	
 }

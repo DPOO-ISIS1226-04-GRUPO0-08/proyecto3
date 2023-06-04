@@ -220,6 +220,8 @@ public class InicioUsuario extends JPanel implements ActionListener{
 				int edad = Integer.parseInt(tEdadCrear.getText());
 				usuarios.crearCuenta(tUsuarioCrear.getText(),tContraseniaCrear.getText(),edad);
 				
+				JOptionPane.showMessageDialog(this, "Cuenta del usuario: " + tUsuarioCrear.getText() + " creada");
+				
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}

@@ -20,7 +20,6 @@ public class UsuariosC {
 		
 		mapaUsuarios = new HashMap<String,UsuarioSesion>(); 
 		cargarUsuarios();	
-		
 	}
 	
 	
@@ -47,34 +46,32 @@ public class UsuariosC {
 	}
 	
 	
+	
 	public void crearCuenta(String nombreUsuario, String contrasenia, int edad) throws IOException {
 		String linea = nombreUsuario +","+ contrasenia +","+ edad;
-		System.out.println("Sobreescribiendooo");
-		BufferedWriter writer = new BufferedWriter(new FileWriter(nombreArchivoUsuarios));
-		writer.write(linea);
 		
-		/**
-		PrintWriter printWriter = new PrintWriter(writer);
-		
-		printWriter.println(linea);
-		printWriter.flush();
-		printWriter.close();
-		*/
+		BufferedWriter writer = new BufferedWriter(new FileWriter(nombreArchivoUsuarios,true));
+        writer.newLine();
+        writer.append(linea);
+        writer.close();
 	}
 
+	
 	
 	private void cargarUsuarios() {
 		
 		String splitComa = ",";
 		String line = "";
 			try {
-				BufferedReader br = new BufferedReader(new FileReader(nombreArchivoUsuarios));
+				FileReader archivo = new FileReader(nombreArchivoUsuarios);
+				BufferedReader br = new BufferedReader(archivo);
 				br.readLine();
 				while ((line = br.readLine()) != null) {
 					String[] datos = line.split(splitComa);
 					UsuarioSesion user = new UsuarioSesion(datos[0], datos[1], datos[2]);
 					mapaUsuarios.put(datos[0], user);
 				}
+				archivo.close();
 				br.close();
 			} catch (IOException e) {
 				e.printStackTrace();

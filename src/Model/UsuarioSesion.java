@@ -4,15 +4,13 @@ public class UsuarioSesion {
 
 	String usuario;
 	String contrasenia;
-	int edad;
+	String documento;
 	
-	public UsuarioSesion(String usuariop, String contraseniap, String edads) {
+	public UsuarioSesion(String usuariop, String contraseniap, String documentop) {
 		
 		this.usuario = usuariop;
 		this.contrasenia = contraseniap;	
-		
-		int edadint = Integer.parseInt(edads);
-		this.edad = edadint;
+		this.documento = documentop;
 	}
 	
 	
@@ -24,7 +22,7 @@ public class UsuarioSesion {
 		return this.contrasenia;
 	}
 	
-	public int getEdad() {
-		return this.edad;
+	public String getEdad() {
+		return this.documento;
 	}
 }

@@ -40,7 +40,7 @@ public class InicioUsuario extends JPanel implements ActionListener{
 	JPanel panelFuncionescrear;
 	private JTextField tUsuarioCrear;
 	private JTextField tContraseniaCrear;
-	private JTextField tEdadCrear;
+	private JTextField tDocumentoCrear;
 	private JButton btnCrearCuenta2;
 
 	
@@ -156,15 +156,15 @@ public class InicioUsuario extends JPanel implements ActionListener{
 		panelContrasenia.add(tContraseniaCrear);
 		panelFuncionescrear.add(panelContrasenia);
 		 
-		JPanel panelEdadCrear = new JPanel();
-		panelEdadCrear.setLayout(new GridLayout(1,2));
-		panelEdadCrear.setBackground(new Color(126,152,151));
-		JLabel lEdadCrear = new JLabel("Escriba su edad:");
-		lEdadCrear.setHorizontalAlignment(JLabel.CENTER);
-		panelEdadCrear.add(lEdadCrear);
-		tEdadCrear = new JTextField();
-		panelEdadCrear.add(tEdadCrear);
-		panelFuncionescrear.add(panelEdadCrear);		
+		JPanel panelDocumentoCrear = new JPanel();
+		panelDocumentoCrear.setLayout(new GridLayout(1,2));
+		panelDocumentoCrear.setBackground(new Color(126,152,151));
+		JLabel lDocumentoCrear = new JLabel("Escriba su documento de identidad:");
+		lDocumentoCrear.setHorizontalAlignment(JLabel.CENTER);
+		panelDocumentoCrear.add(lDocumentoCrear);
+		tDocumentoCrear = new JTextField();
+		panelDocumentoCrear.add(tDocumentoCrear);
+		panelFuncionescrear.add(panelDocumentoCrear);		
 		
 		btnCrearCuenta2 = new JButton("Crear cuenta");
 		btnCrearCuenta2.addActionListener(this);
@@ -217,8 +217,7 @@ public class InicioUsuario extends JPanel implements ActionListener{
 				this.add(panerCrearReserva, BorderLayout.CENTER);
 				panelCentral.setVisible(true);
 				
-				int edad = Integer.parseInt(tEdadCrear.getText());
-				usuarios.crearCuenta(tUsuarioCrear.getText(),tContraseniaCrear.getText(),edad);
+				usuarios.crearCuenta(tUsuarioCrear.getText(),tContraseniaCrear.getText(),tDocumentoCrear.getText());
 				
 				JOptionPane.showMessageDialog(this, "Cuenta del usuario: " + tUsuarioCrear.getText() + " creada");
 				

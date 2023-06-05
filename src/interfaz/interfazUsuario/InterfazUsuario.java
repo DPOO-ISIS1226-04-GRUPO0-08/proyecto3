@@ -48,7 +48,7 @@ public class InterfazUsuario extends JPanel{
 		JPanel panelUsuarionLabel = new JPanel();
 		panelUsuarionLabel.setLayout(new GridLayout(3,1));
 		//panelUsuarionLabel.setBackground(new Color(126,152,151));
-		JLabel lUsuario = new JLabel("Usuario:"); 
+		JLabel lUsuario = new JLabel("Bienvenido " + nombreUsuario); 
 		lUsuario.setHorizontalAlignment(JLabel.CENTER);
 		panelUsuarionLabel.add(Box.createVerticalStrut((int) (interfaz.getHeight()*0.01)));
 		panelUsuarionLabel.add(lUsuario);

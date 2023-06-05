@@ -47,8 +47,11 @@ public class UsuariosC {
 	
 	
 	
-	public void crearCuenta(String nombreUsuario, String contrasenia, int edad) throws IOException {
-		String linea = nombreUsuario +","+ contrasenia +","+ edad;
+	public void crearCuenta(String nombreUsuario, String contrasenia, String documento) throws IOException {
+		String linea = nombreUsuario +","+ contrasenia +","+ documento;
+		
+		UsuarioSesion user = new UsuarioSesion(nombreUsuario, contrasenia, documento);
+		mapaUsuarios.put(nombreUsuario, user);
 		
 		BufferedWriter writer = new BufferedWriter(new FileWriter(nombreArchivoUsuarios,true));
         writer.newLine();

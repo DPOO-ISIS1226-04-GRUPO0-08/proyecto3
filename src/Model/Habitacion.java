@@ -33,6 +33,16 @@ public class Habitacion extends Servicio {
 	private int capacidadNinios = 0;
 	private int capacidadAdultos = 0;
 	private int capacidad = 0;
+	private int tamanio;
+	private boolean aire;
+	private boolean calefaccion;
+	private boolean tv;
+	private boolean cafetera;
+	private boolean plancha;
+	private boolean secador;
+	private boolean AC;
+	private boolean desayuno;
+	
 	private ArrayList<Reserva> reservas;
 	private HashMap<Date,Double> costos;
 	private LocalDate fechaHoy = LocalDate.now();

@@ -1,10 +1,12 @@
 /**
+ * 
  * En este test se prueba el inicio de sesion para las 
  * diferentes combinaciones de:
  * 
  * 1. usuario y contrasenia validos.
  * 2. usuario invalidos/sin cuenta.
  * 3. contrasenia incorrecta.
+ * 
  */
 package tests;
 
